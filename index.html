@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CARROT MASK</title>
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/response.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="vendore/bootstrap-5.0.2/icons-main/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="vendore/bootstrap-5.0.2/css/bootstrap.min.css">
+</head>
+
+<body>
+
+    <main class="for__page">
+        <div class="page">
+
+            <!-- ========== HEADER ========== -->
+            <header class="header">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xxl-10 col-xl-9 col-lg-8 col-md-0 col-sm-0">
+                            <nav class="nav-menu">
+                                <ul class="menu">
+                                    <li class="nav-menu__list"><a class="nav-menu__link" href="#">О МАГАЗИНЕ</a></li>
+                                    <li class="nav-menu__list"><a class="nav-menu__link" href="#">ДОСТАВКА</a></li>
+                                    <li class="nav-menu__list"><a class="nav-menu__link" href="#">ГАРАНТИЯ</a></li>
+                                    <li class="nav-menu__list"><a class="nav-menu__link" href="#">ВОПРОСЫ И ОТВЕТЫ</a>
+                                    </li>
+                                    <li class="nav-menu__list"><a class="nav-menu__link" href="#">ПРЕИМУЩЕСТВА</a></li>
+                                </ul>
+                            </nav>
+                            <div class="burger__menu">
+                                <button class="btn btn-primary burger-btn" type="button" data-bs-toggle="offcanvas">
+                                    <i class="bi bi-justify"></i>
+                                    <i class="bi bi-x-lg"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="col-xxl-2 col-xl-3 col-lg-4 col-md-12 col-sm-12">
+                            <div class="header__phone">
+                                <a href="tel:4997043965">(499) 704-39-65</a>
+                                <span>Круглосуточно 24/7</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <!-- ========== / HEADER ========== -->
+
+            <!-- ========== TOP ========== -->
+            <section class="top">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xxl-5 col-xl-5 col-lg-12 order-2 order-xl-1 col-md-0 col-sm-0">
+                            <div class="top__inner">
+                                <h1 class="top__title">CARROT MASK</h1>
+                                <h2 class="top__description">ЛУЧШЕЕ РЕШЕНИЕ ДЛЯ ТВОЕЙ КОЖИ</h2>
+                                <p class="top__text">маска для лица на основе моркови
+                                    и эфирных масел С ЛЕГКОСТЬЮ ПОБЕДИТ</p>
+                                <ul class="top__list">
+                                    <li><i class="bi bi-check"></i>угри и акне</li>
+                                    <li><i class="bi bi-check"></i>прыщи</li>
+                                    <li><i class="bi bi-check"></i>черные точки</li>
+                                </ul>
+                                <div class="top__img">
+                                    <img src="img/carrot.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xxl-7 col-xl-7 col-lg-12 order-1 order-xl-2 col-md-0 col-sm-0">
+                            <div class="top__bg">
+                                <img src="img/top.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="promo">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xxl-7 col-xl-7 col-lg-12 col-md-0 col-sm-0">
+                            <div class="promo__img">
+                                <img src="img/promo.png" alt="promo">
+                                <div class="promo__img-decore"></div>
+                                <div class="promo__img-decore"></div>
+                                <div class="promo__img-decore"></div>
+                                <div class="promo__img-decore"></div>
+                                <div class="promo__img-decore"></div>
+                                <div class="promo__img-decore"></div>
+                            </div>
+                        </div>
+                        <div class="col-xxl-4 col-xl-4 col-lg-12 col-md-0 col-sm-0">
+                            <h2 class="promo__descr">Успейте заказать со скидкой!</h2>
+                            <div class="promo__price">1200руб <span class="promo__old-price"> 1750 руб </span></div>
+                            <div id="counter" class="promo__counter">
+                                <div class="promo__counter-item">
+                                    <div class="promo__counter-item--numb days"></div>
+                                    <div class="promo__counter-item--text">дней</div>
+                                </div>
+                                <div class="promo__counter-item">
+                                    <div class="promo__counter-item--numb hours"></div>
+                                    <div class="promo__counter-item--text">часов</div>
+                                </div>
+                                <div class="promo__counter-item">
+                                    <div class="promo__counter-item--numb minutes"></div>
+                                    <div class="promo__counter-item--text">минут</div>
+                                </div>
+                                <div class="promo__counter-item">
+                                    <div class="promo__counter-item--numb seconds">04</div>
+                                    <div class="promo__counter-item--text">секунд</div>
+                                </div>
+                            </div>
+                            <form id="promo__form" class="promo__form" action="#">
+                                <input class="promo__form-name" name="name" type="text" placeholder="Ваше имя" required>
+                                <input class="promo__form-phone" name="phone" type="tel" placeholder="Ваш телефон"
+                                    minlength="10" maxlength="10" required>
+                                <input class="promo__form-email" name="email" type="email" placeholder="Ваш e-mail"
+                                    required>
+                                <button class="promo__form-btn">
+                                    Заказать сейчас!
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- ========== / TOP ========== -->
+            <!-- ========== BENEFIT ========== -->
+            <section class="benefit">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xxl-3 col-xl-4 col-lg-12 col-md-12 col-sm-12">
+                            <div class="benefit__wrapper">
+                                <h2 class="benefit__title">Забудь о:</h2>
+                                <div class="benefit__items">
+                                    <div class="benefit__item">
+                                        <div class="benefit__item-img">
+                                            <img class="benefit__item-img-img" src="img/benefit-1.png" alt="benefit">
+                                        </div>
+                                        <div class="benefit__item-text">
+                                            Косметологах
+                                        </div>
+                                    </div>
+                                    <div class="benefit__item">
+                                        <div class="benefit__item-text">
+                                            Дорогостоящих
+                                            <span>процедурах</span>
+                                        </div>
+                                        <div class="benefit__item-img">
+                                            <img class="benefit__item-img-img" src="img/benefit-2.png" alt="benefit">
+                                        </div>
+                                    </div>
+                                    <div class="benefit__item">
+                                        <div class="benefit__item-img">
+                                            <img class="benefit__item-img-img" src="img/benefit-3.png" alt="benefit">
+                                        </div>
+                                        <div class="benefit__item-text">
+                                            Консилерах
+                                            <span>и корректорах</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xxl-5 col-xl-4 col-lg-12 col-md-12 col-sm-12">
+                            <div class="benefit__img">
+                                <img class="benefit__img-img" src="img/benefit.png" alt="benefit-main">
+                            </div>
+                        </div>
+                        <div class="col-xxl-3 col-xl-4 col-lg-12 col-md-12 col-sm-12">
+                            <div class="benefit__wrapper">
+                                <h2 class="benefit__title-second benefit__title">Carrot Mask:</h2>
+                                <div class="benefit__items">
+                                    <div class="benefit__item">
+                                        <div class="benefit__item-img--second benefit__item-img">
+                                            <img class="benefit__item-img-img" src="img/benefit-4.png" alt="benefit">
+                                        </div>
+                                        <div class="benefit__item-text">
+                                            Питает
+                                            <span>и увлажняет</span>
+                                        </div>
+                                    </div>
+                                    <div class="benefit__item">
+                                        <div class="benefit__item-text">
+                                            Разглаживает
+                                            <span>и витаминизирует</span>
+                                        </div>
+                                        <div class="benefit__item-img--second benefit__item-img">
+                                            <img class="benefit__item-img-img" src="img/benefit-5.png" alt="benefit">
+                                        </div>
+                                    </div>
+                                    <div class="benefit__item">
+                                        <div class="benefit__item-img--second benefit__item-img">
+                                            <img class="benefit__item-img-img" src="img/benefit-6.png" alt="benefit">
+                                        </div>
+                                        <div class="benefit__item-text">
+                                            Ухаживает
+                                            <span>и лечит</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- ========== / BENEFIT ========== -->
+
+            <!-- ========== REVIEWS ========== -->
+            <section class="reviews">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                            <h2 class="reviews__title">Отзывы:</h2>
+                        </div>
+                        <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-12 col-sm-12">
+                            <div class="reviews__item">
+                                <div class="reviews__item-img">
+                                    <img class="reviews__item-img-img" src="img/reviews-1.png" alt="reviews">
+                                </div>
+                                <div class="reviews__item-name">Татьяна, 32 года</div>
+                                <p class="reviews__item-text">
+                                    От угрей не было никакого спасения. Узнала о Carrot Mask, сначала думала - очередная
+                                    панацея. И была неправа. Маска вернула мне мою здоровую кожу! Все-таки есть что-то в
+                                    натуральных продуктах!
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-12 col-sm-12">
+                            <div class="reviews__item">
+                                <div class="reviews__item-img">
+                                    <img class="reviews__item-img-img" src="img/reviews-2.png" alt="reviews">
+                                </div>
+                                <div class="reviews__item-name">Мария, 26 лет</div>
+                                <p class="reviews__item-text">
+                                    Маска Carrot Mask была "последней надеждой". И она себя оправдала! Уже через 2
+                                    недели прыщики стали заметно меньше, а через месяц я увидела в зеркале свою
+                                    идеальную кожу!
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-12 col-sm-12">
+                            <div class="reviews__item">
+                                <div class="reviews__item-img">
+                                    <img class="reviews__item-img-img" src="img/reviews-3.png" alt="reviews">
+                                </div>
+                                <div class="reviews__item-name">Инна, 33 года</div>
+                                <p class="reviews__item-text">
+                                    Маску получила в подарок. Когда захотела купить себе второй тюбик, оказалось что в
+                                    свободной продаже в аптеках этой маски нет. Нужно заказывать с официально сайта
+                                    Хендель.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- ========== / REVIEWS ========== -->
+
+            <!-- ========== SPECIFICATION ========== -->
+            <section class="specification">
+                <div class="container">
+                    <div class="row">
+                        <div
+                            class="col-xxl-7 order-xl-1 col-xl-7 order-lg-1 col-lg-8 col-md-12 order-md-2 order-sm-2 col-sm-12">
+                            <div class="specification__wrapper">
+                                <h2 class="specification__title">
+                                    ПОРАЗИТЕЛЬНЫЙ ЭФФЕКТ УЖЕ
+                                    ЧЕРЕЗ 7 ДНЕЙ ПРИМЕНЕНИЯ
+                                </h2>
+                                <ul class="specification__lists">
+                                    <li class="specification__list"><i class="bi bi-check"></i>Содержит Ниацин -
+                                        новейшее средство в борьбе с
+                                        несовершенством кожи.</li>
+                                    <li class="specification__list"><i class="bi bi-check"></i>В состав входит комплекс
+                                        витаминов для выравнивания
+                                        и увлажнения кожи.</li>
+                                    <li class="specification__list"><i class="bi bi-check"></i>Усиленная формула
+                                        экстракта моркови - разработка
+                                        лаборатории Hendel's.</li>
+                                    <li class="specification__list"><i class="bi bi-check"></i>Не окрашивает кожу -
+                                        никакой желтизны после
+                                        использования. </li>
+                                    <li class="specification__list"><i class="bi bi-check"></i>Абсолютно безопасен, что
+                                        подтверждают сертификаты
+                                        клинических испытаний.</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div
+                            class="col-xxl-5 order-xl-2 col-xl-5 order-lg-2 col-lg-4 col-md-12 order-md-1 order-sm-1 col-sm-12">
+                            <div class="specification__img">
+                                <img class="specification__img-img" src="img/specification.png" alt="specification">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- ========== / SPECIFICATION ========== -->
+
+            <!-- ========== PROMO ========== -->
+            <section class="promo">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xxl-7 col-xl-7 col-lg-12 col-md-0 col-sm-0">
+                            <div class="promo__img">
+                                <img src="img/promo.png" alt="promo">
+                                <div class="promo__img-decore"></div>
+                                <div class="promo__img-decore"></div>
+                                <div class="promo__img-decore"></div>
+                                <div class="promo__img-decore"></div>
+                                <div class="promo__img-decore"></div>
+                                <div class="promo__img-decore"></div>
+                            </div>
+                        </div>
+                        <div class="col-xxl-4 col-xl-4 col-lg-12 col-md-0 col-sm-0">
+                            <h2 class="promo__descr">Успейте заказать со скидкой!</h2>
+                            <div class="promo__price">1200руб <span class="promo__old-price"> 1750 руб </span></div>
+                            <div id="counter2" class="promo__counter">
+                                <div class="promo__counter-item">
+                                    <div class="promo__counter-item--numb days"></div>
+                                    <div class="promo__counter-item--text">дней</div>
+                                </div>
+                                <div class="promo__counter-item">
+                                    <div class="promo__counter-item--numb hours"></div>
+                                    <div class="promo__counter-item--text">часов</div>
+                                </div>
+                                <div class="promo__counter-item">
+                                    <div class="promo__counter-item--numb minutes"></div>
+                                    <div class="promo__counter-item--text">минут</div>
+                                </div>
+                                <div class="promo__counter-item">
+                                    <div class="promo__counter-item--numb seconds">04</div>
+                                    <div class="promo__counter-item--text">секунд</div>
+                                </div>
+                            </div>
+                            <form id="promo__form2" class="promo__form" action="#">
+                                <input class="promo__form-name" name="name" type="text" placeholder="Ваше имя" required>
+                                <input class="promo__form-phone" name="phone" type="tel" placeholder="Ваш телефон"
+                                    minlength="10" maxlength="10" required>
+                                <input class="promo__form-email" name="email" type="email" placeholder="Ваш e-mail"
+                                    required>
+                                <button class="promo__form-btn">
+                                    Заказать сейчас!
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <!-- ========== / PROMO ========== -->
+
+        <!-- ========== FOOTER ========== -->
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                        <div class="footer__wrapper">
+                            <div class="footer__links">
+                                <a class="footer__link" href="#">Политика конфиденциальности</a>
+                                <a class="footer__link" href="#">Партнерская программа</a>
+                            </div>
+                            <p class="footer__text">
+                                Срочную доставку осуществляет Новая Почта.
+                                <span>Доставка оплачивается по тарифам Новой почты при получении</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- ========== / FOOTER ========== -->
+    </main>
+
+    <script src="js/script.js"></script>
+    <script src="vendore/bootstrap-5.0.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
