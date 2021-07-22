@@ -26,12 +26,17 @@
                         <div class="col-xxl-10 col-xl-9 col-lg-8 col-md-0 col-sm-0">
                             <nav class="nav-menu">
                                 <ul class="menu">
-                                    <li class="nav-menu__list"><a class="nav-menu__link" href="#">О МАГАЗИНЕ</a></li>
-                                    <li class="nav-menu__list"><a class="nav-menu__link" href="#">ДОСТАВКА</a></li>
-                                    <li class="nav-menu__list"><a class="nav-menu__link" href="#">ГАРАНТИЯ</a></li>
-                                    <li class="nav-menu__list"><a class="nav-menu__link" href="#">ВОПРОСЫ И ОТВЕТЫ</a>
+                                    <li class="nav-menu__list"><a class="nav-menu__link" data-bs-toggle="modal"
+                                            data-bs-target="#exampleModal1" href="#">О МАГАЗИНЕ</a></li>
+                                    <li class="nav-menu__list"><a class="nav-menu__link" data-bs-toggle="modal"
+                                            data-bs-target="#exampleModal2" href="#">ДОСТАВКА</a></li>
+                                    <li class="nav-menu__list"><a class="nav-menu__link" data-bs-toggle="modal"
+                                            data-bs-target="#exampleModal3" href="#">ГАРАНТИЯ</a></li>
+                                    <li class="nav-menu__list"><a class="nav-menu__link" data-bs-toggle="modal"
+                                            data-bs-target="#exampleModal4" href="#">ВОПРОСЫ И ОТВЕТЫ</a>
                                     </li>
-                                    <li class="nav-menu__list"><a class="nav-menu__link" href="#">ПРЕИМУЩЕСТВА</a></li>
+                                    <li class="nav-menu__list"><a class="nav-menu__link"
+                                            href="#reviews">ПРЕИМУЩЕСТВА</a></li>
                                 </ul>
                             </nav>
                             <div class="burger__menu">
@@ -212,7 +217,7 @@
             <!-- ========== / BENEFIT ========== -->
 
             <!-- ========== REVIEWS ========== -->
-            <section class="reviews">
+            <section id="reviews" class="reviews">
                 <div class="container">
                     <div class="row">
                         <div class="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12">
@@ -363,8 +368,10 @@
                     <div class="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12">
                         <div class="footer__wrapper">
                             <div class="footer__links">
-                                <a class="footer__link" href="#">Политика конфиденциальности</a>
-                                <a class="footer__link" href="#">Партнерская программа</a>
+                                <a class="footer__link" target="_blank" href="files/konf.pdf">Политика
+                                    конфиденциальности</a>
+                                <a class="footer__link" target="_blank" href="files/program.pdf">Партнерская
+                                    программа</a>
                             </div>
                             <p class="footer__text">
                                 Срочную доставку осуществляет Новая Почта.
@@ -376,6 +383,239 @@
             </div>
         </footer>
         <!-- ========== / FOOTER ========== -->
+
+        <!-- ========== MODAL WINDOWS ========== -->
+        <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">О нашем магазине</h5>
+                    </div>
+                    <div class="modal-body">
+
+                        <p class="modal-body__text">Наш сайт - часть крупной сети интернет-магазинов, занимающейся
+                            розничной продажей
+                            популярных
+                            товаров уже несколько лет. Все наши товары являются оригиналами высшего качества, ввезены
+                            легально и имеют все необходимые сертификаты. У нас одни из самых низких цен, т.к. мы
+                            покупаем
+                            товары напрямую у производителя.</p>
+
+                        <p class="modal-body__text">Наш сайт - часть крупной сети интернет-магазинов, занимающейся
+                            розничной продажей популярных
+                            товаров уже несколько лет.</p>
+
+                        <p class="modal-body__text">Все наши товары являются оригиналами высшего качества, ввезены
+                            легально и имеют все необходимые
+                            сертификаты. У нас одни из самых низких цен, т.к. мы покупаем товары напрямую у
+                            производителя.</p>
+
+                        <p class="modal-body__text">Наш магазин имеет свой колл-центр, состоящий из более 300 операторов
+                            для оперативного приема
+                            всех заказов. У нас есть курьерская служба, обладающая собственным парком автомобилей.</p>
+
+                        <p class="modal-body__text">Мы доставляем заказы практически во все регионы страны и принимаем
+                            большинство способов оплаты
+                            товаров, начиная от наложенного платежа и заканчивая различными электронными системами.</p>
+
+                        <p class="modal-body__text">Мы всегда идем навстречу пожеланиям клиентов. Надеемся, что вы
+                            останетесь довольны обращением в
+                            наш магазин.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Доставка товара</h5>
+                    </div>
+                    <div class="modal-body">
+                        <ul class="modal__items">
+                            Доставку возможно осуществить следующими способами:
+                            <li><i class="bi bi-check"></i>
+                                Доставка в Киеве до квартиры, стоимость доставки 40 грн (в отдельных случаях 50 грн);
+                            </li>
+                            <li><i class="bi bi-check"></i>
+                                По Украине службой доставки (Новая Почта, УкрПочта) - тарифы службы доставки (всреднем
+                                около 45 грн., зависит от веса и растояния);
+                            </li>
+                            <li><i class="bi bi-check"></i>На ряд продуктов доставка осуществляется БЕСПЛАТНО.</li>
+                        </ul>
+                        <div class="modal-body__text">Срок Доставки 1-2 дня!</div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Гарантия</h5>
+                    </div>
+                    <div class="modal-body">
+                        <p class="modal-body__text">На все товары распространяется гарантия.
+                            Подтверждением гарантийных обязательств является гарантийный талон.</p>
+                        <ul class="modal__items">
+                            <p>В гарантии может быть отказано в следующих случаях:</p>
+                            <li><i class="bi bi-check"></i>были нарушены правила эксплуатации;</li>
+                            <li><i class="bi bi-check"></i>изделие подвергалось механическому повреждению;</li>
+                            <li><i class="bi bi-check"></i>производилось вскрытие, частными лицами или
+                                организациями, не имеющими на это соответствующего разрешения;</li>
+                            <li><i class="bi bi-check"></i>дефекты вызваны попаданием внутрь изделия посторонних
+                                предметов, веществ, насекомых;
+                            </li>
+                            <li><i class="bi bi-check"></i>дефекты возникли вследствие несчастных случаев и
+                                форс-мажорных обстоятельств;</li>
+                        </ul>
+                        <p class="modal-body__text">Право на бесплатное гарантийное обслуживание дает гарантийный талон.
+                            Пожалуйста, сохраняйте
+                            его в течение всего срока эксплуатации.</p>
+                        <p class="modal-body__text">Если товар приобретался в Киеве или другом городе Украины, товар
+                            необходимо запаковать для
+                            безопасной транспортировки и выслать на отправителя той службой, которой получали посылку.
+                        </p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="exampleModal4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Гарантия</h5>
+                    </div>
+                    <div class="modal-body">
+                        <div class="accordion accordion-flush" id="accordionFlushExample">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="flush-headingOne">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#flush-collapseOne" aria-expanded="false"
+                                        aria-controls="flush-collapseOne">
+                                        МОЖЕТЕ ЛИ ВЫ ОТПРАВИТЬ МНЕ ПРОБНИКИ ПРОДУКТОВ?
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseOne" class="accordion-collapse collapse"
+                                    aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body">
+                                        Магазин не предлагает пробники в свободном распространении. Однако вам могут
+                                        быть предложены пробные версии продукции во время проведения акций. Следите за
+                                        акциями и промо-предложениями на нашем сайте или подпишитесь на рассылку.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="flush-headingTwo">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#flush-collapseTwo" aria-expanded="false"
+                                        aria-controls="flush-collapseTwo">
+                                        МОЖНО ЛИ ОТМЕНИТЬ СВОЙ ЗАКАЗ?
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                                    aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body">
+                                        Отмена возможна только до момента отправки заказа на ваш адрес. Если Вы хотите
+                                        отменить свой заказ после его регистрации, пожалуйста, как можно скорее
+                                        свяжитесь с нами по телефону (499) 704-39-65. Мы сделаем все возможное, чтобы
+                                        выполнить
+                                        вашу просьбу.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="flush-headingThree">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#flush-collapseThree" aria-expanded="false"
+                                        aria-controls="flush-collapseThree">
+                                        В КАКИЕ ГОРОДА ВЫ ДОСТАВЛЯЕТЕ ЗАКАЗЫ И КАК ДОЛГО НУЖНО ОЖИДАТЬ ДОСТАВКУ?
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseThree" class="accordion-collapse collapse"
+                                    aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body">
+                                        Мы доставляем заказы по всей Украине. Сроки ожидания заказов варьируются в
+                                        зависимости от выбранного Вами вида доставки, отдаленности населенного пункта и
+                                        сервиса почтовых служб. В среднем срок доставки по Украине составляет от 2 до 7
+                                        дней.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="flush-heading4">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#flush-collapse4" aria-expanded="false"
+                                        aria-controls="flush-collapse4">
+                                        КАК Я МОГУ ПРОВЕРИТЬ СТАТУС СВОЕГО ЗАКАЗА?
+                                    </button>
+                                </h2>
+                                <div id="flush-collapse4" class="accordion-collapse collapse"
+                                    aria-labelledby="flush-heading4" data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body">
+                                        Мы отправим вам уведомление подтверждающее отправку заказа на электронный адрес,
+                                        который Вы указали при оформлении покупки. Если у вас возникнут вопросы Вы
+                                        можете связаться с нашим Отделом обслуживания клиентов по телефону
+                                        (499) 704-39-65, или электронной почте customercare@allure-cosmetics.com.ua.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="flush-heading5">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#flush-collapse5" aria-expanded="false"
+                                        aria-controls="flush-collapse5">
+                                        ВХОДИТ ЛИ СТОИМОСТЬ ДОСТАВКИ В СУММУ ЗАКАЗА?
+                                    </button>
+                                </h2>
+                                <div id="flush-collapse5" class="accordion-collapse collapse"
+                                    aria-labelledby="flush-heading5" data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body">
+                                        Стоимость доставки на сайте интернет-магазина рассчитывается автоматически для
+                                        каждого способа доставки и включается в итоговую сумму заказа.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="flush-heading6">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#flush-collapse6" aria-expanded="false"
+                                        aria-controls="flush-collapse6">
+                                        КАК МОЖНО ОПЛАТИТЬ ЗАКАЗ?
+                                    </button>
+                                </h2>
+                                <div id="flush-collapse6" class="accordion-collapse collapse"
+                                    aria-labelledby="flush-heading6" data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body">
+                                        Мы принимаем несколько видов оплаты: наложенный платеж (только при доставке
+                                        почтовыми компаниями), наличные (при курьерской доставке) и банковский перевод.
+                                        Более подробно с информацией о способах и условиях оплаты вы можете ознакомиться
+                                        в разделе ОПЛАТА.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ========== / MODAL WINDOWS ========== -->
     </main>
 
     <script src="js/script.js"></script>

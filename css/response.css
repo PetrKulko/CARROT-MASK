@@ -144,7 +144,7 @@
   .burger__menu {
     display: block;
     position: absolute;
-    right: 10px;
+    right: 20px;
     top: 10px;
     z-index: 9999999999; }
 
@@ -175,6 +175,9 @@
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center; }
+
+  .for__page .modal-dialog {
+    margin: 4.75rem auto; }
 
   .specification {
     padding: 0; } }
@@ -371,13 +374,11 @@
   .promo__form input {
     font-size: 15px; }
 
-    .nav-menu::before {
-      height: 50px;
-  }
+  .nav-menu::before {
+    height: 50px; }
 
   .nav-menu {
-    padding: 50px 30px 30px 0px;
-}
+    padding: 50px 30px 30px 0px; }
 
   .promo__form-btn {
     height: 40px;
@@ -408,6 +409,17 @@
   .footer__wrapper {
     padding: 15px 0; }
 
+  .for__page .accordion-button {
+    font-size: 14px;
+    padding: 10px 5px; }
+
+  .for__page .accordion-body {
+    font-size: 12px; }
+
+  .modal__items,
+  .modal-body__text {
+    font-size: 12px; }
+
   .footer__links a {
     font-size: 16px; } }
 @media (max-width: 350px) {
@@ -415,6 +427,12 @@
     height: 68px;
     width: 68px;
     padding-top: 5px; }
+
+  .for__page .accordion-button {
+    font-size: 12px; }
+
+  .for__page .accordion-body {
+    font-size: 10px; }
 
   .promo__img-decore:nth-child(5) {
     left: 245px; }
@@ -462,3 +480,5 @@
 
   .specification__title {
     font-size: 20px; } }
+
+/*# sourceMappingURL=response.css.map */
