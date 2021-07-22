@@ -47,12 +47,20 @@ initializeClock('counter2', deadline);
 
 // === BURGER ===
 const iconMenu = document.querySelector('.burger-btn');
+const menuBody = document.querySelector('.nav-menu');
 if (iconMenu) {
-    const menuBody = document.querySelector('.nav-menu');
+
     iconMenu.addEventListener("click", function (e) {
         document.body.classList.toggle('_lock');
         iconMenu.classList.toggle('_active');
         menuBody.classList.toggle('_active');
     });
 }
+
+let menuLink = document.getElementById("menu__link");
+menuLink.addEventListener("click", function (e) {
+    document.body.classList.remove('_lock');
+    iconMenu.classList.remove('_active');
+    menuBody.classList.remove('_active');
+});
 // === / BURGER ===
